@@ -20,6 +20,9 @@ if(clickTime === 0){
 }
 const screenWidth = window.innerWidth
 
+
+
+
 box.addEventListener("click" ,function(){
     if(screenWidth>910){
         overlayBox.style.transform="TranslateY(1128px)"
@@ -39,8 +42,8 @@ box.addEventListener("click" ,function(){
             box.style.transform="TranslateY(00px)"   
         }, 1000);
     })
-
 overlayBox.addEventListener("click", function(){
+
 opened.style.display="block"
     if(clickTime === 0){
         setTimeout(() => {
