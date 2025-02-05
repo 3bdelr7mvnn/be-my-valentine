@@ -20,7 +20,25 @@ if(clickTime === 0){
 }
 const screenWidth = window.innerWidth
 
-
+box.addEventListener("click" ,function(){
+    if(screenWidth>910){
+        overlayBox.style.transform="TranslateY(1128px)"
+                    opened.style.transform="TranslateY(800px)"
+                    box.style.zIndex= "0"
+        }else if(screenWidth<910){
+            overlayBox.style.transform="TranslateY(1059px)"
+                    opened.style.transform="TranslateY(800px)"
+                    box.style.zIndex= "0"
+        }
+           
+           
+       
+        setTimeout(() => {
+            overlayBox.style.display="none" 
+            overlayBox.style.display="none" 
+            box.style.transform="TranslateY(00px)"   
+        }, 1000);
+    })
 
 overlayBox.addEventListener("click", function(){
 opened.style.display="block"
