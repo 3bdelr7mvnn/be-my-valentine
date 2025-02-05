@@ -1,0 +1,338 @@
+h3,h2,h1,h4,h5,h6,p,span{
+    margin: 0;
+}
+
+
+:root{
+    --sec-color: rgb(15 28 38);
+    --main-color:#aaaf26;
+}
+img{
+    width: 300px;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.con{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.bcon{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc( 100% - 50px);
+    background-color: white;
+}
+/* small */
+@media (max-width: 577px){
+    .con{
+     width: 100%;
+    }
+    .bcon{
+     width: 100%;
+    }
+
+  }
+@media (min-width: 768px){
+    .con{
+     width: 750px;
+    }
+
+  }
+
+/* medium */
+ @media (min-width: 992px) {
+    .con{
+     width: 970px;
+    }
+
+ }
+ 
+/* large */
+ @media (min-width: 1200px) {
+    .con{
+     width: 1170px;
+    }
+
+}
+
+
+body{
+    overflow: hidden;
+
+}
+
+.all{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center
+;
+}
+
+.overlayBox{
+    position: absolute;
+    background-color: rgb(229, 30, 63);
+    width: 380px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+cursor: pointer;
+align-items: center;
+border-radius: 0px;
+transition: 3s linear;
+
+font-family: "Pacifico", serif;
+font-weight: 400;
+font-style: normal;
+}
+.border{
+    border: 3px solid rgb(16, 7, 7);
+}
+
+.opened{ 
+display: none;
+    transition: 3s !important;
+    position: absolute;
+    transition: 3s linear;
+
+    transform: translateY(-328px);
+     border: 190px solid;
+    border-color:transparent transparent  rgb(229, 30, 63) transparent;
+}
+.line1{
+background-color:rgb(16, 7, 7) ;
+position: absolute;
+height: 3px;
+width: 217px;
+right: -16px;
+top: 50px;
+transform: rotate(-29deg);
+}
+.line2{
+background-color:rgb(16, 7, 7) ;
+position: absolute;
+height: 3px;
+
+width: 217px;
+left: -16px;
+top: 50px;
+transform: rotate(29deg);
+}
+.overlayBox img{
+    z-index: -1;
+    position: absolute ;
+    width: 100px;
+    top: -40px;  
+}
+.overlayBox #img1{
+    right: -55px;
+}
+.overlayBox #img2{
+transform: rotate(270deg);
+    left: -55px;
+    top: -47px;  
+
+}
+
+.overlayBox h3{
+    color: white;
+    margin-top: 120px;
+    font-size: 40px;
+}
+.overlayBox button{
+    color:  rgb(250, 138, 156);
+    font-size: 25px;
+    font-weight: 900;
+    font-style: bold;
+    margin-top: 10px;
+}
+.box{
+    position: absolute;
+background-color: rgb(250, 138, 156);
+width: 330px;
+height: 280px;
+transform: translateY();
+transition: 2s;
+border-radius: 10px;
+transform: translateY(-0px);
+color: white;
+display: flex;
+align-items: center;
+  z-index: -1; 
+flex-direction: column;
+
+
+}
+
+.box p{
+    font-weight: bold;
+    font-size: 23px;
+    padding: 16px;
+    margin-top: 30px;
+
+    font-family: "Pacifico", serif;
+font-weight: 400;
+font-style: normal;
+}
+.box .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    z-index: 100;
+}
+.box .btns button{
+ cursor: pointer;
+    border-radius: 4px;
+    z-index: 100;
+color: white;
+
+
+
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+ 
+  
+}
+
+.box .btns .yesBtn{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    
+    background-color: rgba(0, 255, 8, 0.877);
+    z-index: 100;
+}
+
+
+.box .btns .noBtn{
+    background-color: rgba(249, 6, 6, 0.868);
+    padding: 5px 10px;
+    z-index: -100;
+}
+
+
+.yesPage{
+    position: absolute;
+    color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100%;
+width: 100%;
+}
+.yesPage h2{
+
+    font-size: 40px;
+  
+    margin-bottom: 20px;
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    
+}
+.yesPage i{
+    font-size: 80px;
+    color: rgb(255, 0, 85);
+}
+
+@media (max-width: 900px){
+    .overlayBox{
+        width: 300px;
+        height: 220px;
+    }
+    .overlayBox h3{
+   
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+    .line1{
+       
+        width: 172px;
+        right: -11px;
+        top: 38px;
+        transform: rotate(-27deg);
+        }
+        .line2{
+   
+            width: 172px;
+            right: -11px;
+            top: 38px;
+            transform: rotate(27deg);
+        }
+
+        .opened{ 
+           
+            transform: translateY(-259px);
+             border: 150px solid;
+            border-color:transparent transparent  rgb(229, 30, 63) transparent;
+        }
+
+    .box{ 
+    width: 280px;
+    height: 220px;
+    }
+    .box p{
+       
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 30px;
+    
+        font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+
+    .yesPage h2{
+
+        font-size: 30px;
+      
+        margin-bottom: 20px;
+    
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        
+    }
+  }
