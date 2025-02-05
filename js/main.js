@@ -39,7 +39,6 @@ box.addEventListener("click" ,function(){
             box.style.transform="TranslateY(00px)"   
         }, 1000);
     })
-
 overlayBox.addEventListener("click", function(){
 opened.style.display="block"
     if(clickTime === 0){
