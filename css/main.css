@@ -96,7 +96,10 @@ align-items: center;
 justify-content: center
 ;
 }
-
+.bgimg{
+    background: url(../imgs/Birthday\ Wishes\ Greetings.gif);
+    background-blend-mode: screen;
+}
 .overlayBox{
     position: absolute;
     background-color: rgb(229, 30, 63);
