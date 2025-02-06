@@ -94,11 +94,13 @@ body{
 display: flex;
 align-items: center;
 justify-content: center;
+background: url(../imgs/Birthday\ Wishes\ Greetings.gif);
 
+  
 }
 .bgimg{
     background: url(../imgs/Birthday\ Wishes\ Greetings.gif);
-    background-blend-mode: screen;
+
 }
 .overlayBox{
     position: absolute;
@@ -384,6 +386,10 @@ width: 100%;
         font-weight: 800;
         font-style: normal;
         
+    }
+    .bgimg{
+        background: url(../imgs/Birthday\ Wishes\ Greetings.gif);
+        background-size: 100px; 
     }
   }
 
